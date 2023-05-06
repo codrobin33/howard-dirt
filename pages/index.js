@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '@components/Header';
+import SmallSeperator from '@components/SmallSeperator';
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
 
             <main>
                 <Header />
+                <SmallSeperator />
             </main>
         </div>
     )

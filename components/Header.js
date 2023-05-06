@@ -1,3 +1,5 @@
+import Seperator from "./Seperator";
+
 export default function Example() {
 
     return (
@@ -11,9 +13,8 @@ export default function Example() {
                     <source src="/small_video_bg_dirt.mp4" type="video/mp4" />
                     Your browser does not support the video tag
                 </video>
-                <img src="/bg_img_dirt.png" className="sm:hidden -z-10 absolute object-cover h-full" />
 
-                <div className=" isolate px-6 pt-14 lg:px-8 ">
+                <div className="isolate px-6 pt-14 lg:px-8 ">
                     <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                         <div className="text-center">
                             <h1 className="text-6xl font-bold tracking-tight text-gray-200 sm:text-8xl">
@@ -37,6 +38,7 @@ export default function Example() {
                         </div>
                     </div>
                 </div>
+                <Seperator />
             </div>
         </div>
     )
