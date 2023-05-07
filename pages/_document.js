@@ -9,7 +9,7 @@ export default function Document() {
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YG376LSLBR"></script>
                 <script>
                     window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
+                    function gtag(){dataLayer.push(arguments)}
                     gtag('js', new Date());
 
                     gtag('config', 'G-YG376LSLBR');
