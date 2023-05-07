@@ -79,6 +79,7 @@ export default function Contact() {
                 </div>
                 <form
                     name="contact" method="post" data-netlify="true"
+                    data-netlify-recaptcha="true"
                     className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
                 >
                     <input type="hidden" name="form-name" value="contact" />
@@ -157,6 +158,7 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <div className="mt-8 flex justify-end items-center space-x-4">
                             <button
                                 type="submit"
