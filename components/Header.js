@@ -31,7 +31,7 @@ export default function Header() {
                             <div className="mt-8 flex items-center justify-center gap-x-6">
                                 <a href="tel:816-935-9900" className="inline-flex items-center px-5 py-3 mr-1 text-lg font-semibold text-white no-underline align-middle bg-red-600 border border-transparent border-solid rounded-md cursor-pointer select-none mb-0 w-auto hover:bg-red-700 hover:border-red-700 hover:text-white focus-within:bg-red-700 focus-within:border-red-700">
                                     (816) 935-9900
-                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                                 </a>
                                 <a href="#promise" className="hidden sm:block text-sm font-semibold leading-6 text-gray-300 hover:underline hover:underline-offset-2">
                                     Learn more

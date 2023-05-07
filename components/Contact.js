@@ -1,6 +1,27 @@
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { useCallback, useState } from 'react'
 
 export default function Contact() {
+    const [submitted, setSubmitted] = useState(false);
+
+    const submitForm = useCallback((e) => {
+        e.preventDefault();
+
+        const myForm = e.target;
+        const formData = new FormData(myForm);
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => {
+                console.log("Form successfully submitted");
+                setSubmitted(true);
+            })
+            .catch((error) => alert(error));
+    }, [setSubmitted]);
+
     return (
         <div className="relative isolate bg-white">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -78,7 +99,7 @@ export default function Contact() {
                 </div>
                 <form
                     name="contact"
-                    method="POST"
+                    onSubmit={submitForm}
                     data-netlify="true"
                     data-netlify-recaptcha="true"
                     className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
@@ -95,6 +116,7 @@ export default function Contact() {
                                         name="first-name"
                                         id="first-name"
                                         autoComplete="given-name"
+                                        required
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
@@ -137,6 +159,7 @@ export default function Contact() {
                                         name="phone-number"
                                         id="phone-number"
                                         autoComplete="tel"
+                                        required
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
@@ -156,7 +179,12 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-8 flex justify-end">
+                        <div className="mt-8 flex justify-end items-center space-x-4">
+                            {(submitted) &&
+                                <p className="text-green-700">
+                                    Form Submitted!
+                                </p>
+                            }
                             <button
                                 type="submit"
                                 className="rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
