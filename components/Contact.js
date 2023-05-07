@@ -6,6 +6,7 @@ export default function Contact() {
 
     const submitForm = useCallback((e) => {
         e.preventDefault();
+        e.stopPropagation();
 
         const myForm = e.target;
         const formData = new FormData(myForm);
