@@ -4,6 +4,7 @@ import SmallSeperator from '@components/SmallSeperator';
 import PicturePanel from '@components/PicturePanel';
 import Contact from '@components/Contact';
 import Footer from '@components/Footer';
+import FAQ from '@components/FAQ';
 
 export default function Home() {
     return (
@@ -17,7 +18,9 @@ export default function Home() {
                 <Header />
                 <SmallSeperator />
                 <PicturePanel />
+                <FAQ />
                 <Contact />
+
             </main>
 
             <Footer />
