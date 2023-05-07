@@ -10,8 +10,10 @@ export default function Home() {
     return (
         <div className="">
             <Head>
-                <title>Next.js Starter!</title>
-                <link rel="icon" href="/favicon.ico" />
+                <title>A Plus Topsoil</title>
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
             </Head>
 
             <main>
