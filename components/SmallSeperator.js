@@ -1,9 +1,7 @@
-import Seperator from "./Seperator";
-
 const stats = [
     { id: 1, name: 'Ready for your project', value: 'Fast Delivery' },
     { id: 2, name: 'From the rich soils in Platte County', value: 'Quality Dirt' },
-    { id: 3, name: 'Family owned and operated', value: 'Top Notch Support' },
+    { id: 3, name: 'Family owned and operated', value: 'Friendly' },
 ]
 
 export default function SmallSeperator() {
