@@ -158,11 +158,6 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="mt-8 flex justify-end items-center space-x-4">
-                            {(submitted) &&
-                                <p className="text-green-700">
-                                    Form Submitted!
-                                </p>
-                            }
                             <button
                                 type="submit"
                                 className="rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
