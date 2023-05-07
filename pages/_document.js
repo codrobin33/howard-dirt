@@ -6,6 +6,14 @@ export default function Document() {
         <Html>
             <Head>
                 <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-YG376LSLBR"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-YG376LSLBR');
+                </script>
             </Head>
             <body>
                 <Main />
