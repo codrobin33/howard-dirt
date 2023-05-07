@@ -2,27 +2,6 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 import { useCallback, useState } from 'react'
 
 export default function Contact() {
-    const [submitted, setSubmitted] = useState(false);
-
-    const submitForm = useCallback((e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const myForm = e.target;
-        const formData = new FormData(myForm);
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
-            .then(() => {
-                console.log("Form successfully submitted");
-                setSubmitted(true);
-            })
-            .catch((error) => alert(error));
-    }, [setSubmitted]);
-
     return (
         <div className="relative isolate bg-white">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -99,11 +78,10 @@ export default function Contact() {
                     </div>
                 </div>
                 <form
-                    name="contact"
-                    method="POST"
-                    netlify
+                    name="contact" method="post" data-netlify="true"
                     className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
                 >
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
