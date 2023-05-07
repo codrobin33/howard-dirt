@@ -1,5 +1,6 @@
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { useCallback, useState } from 'react'
+import reCAPTCHA from "react-google-recaptcha"
 
 export default function Contact() {
     return (
@@ -160,7 +161,7 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div data-netlify-recaptcha="true"></div>
+                        <reCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} />
                         <div className="mt-8 flex justify-end items-center space-x-4">
                             <button
                                 type="submit"
