@@ -1,5 +1,4 @@
 import { PhoneIcon } from '@heroicons/react/24/outline'
-import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Contact() {
     return (
@@ -80,11 +79,16 @@ export default function Contact() {
                 <form
                     name="contact"
                     method="POST"
-                    data-netlify-recaptcha="true"
+                    netlify-honeypot="bot-field"
                     data-netlify="true"
                     className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
                 >
                     <input type="hidden" name="form-name" value="contact" />
+                    <p className="hidden">
+                        <label>
+                            Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                    </p>
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
@@ -160,7 +164,6 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <ReCAPTCHA sitekey={process.env.NEXT_SITE_RECAPTCHA_KEY} />
                         <div className="mt-8 flex justify-end items-center space-x-4">
                             <button
                                 type="submit"
