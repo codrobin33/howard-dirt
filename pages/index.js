@@ -14,6 +14,14 @@ export default function Home() {
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+                <meta property="og:title" content="A Plus Topsoil" />
+                <meta property="og:description" content="Dirt, gravel, fill and more! We have top quality product ready for your project. Call us to get started" />
+                <meta property="og:image" content="/dirt_share.png" />
+                <meta name="twitter:title" content="A Plus Topsoil" />
+                <meta name="twitter:description" content="Dirt, gravel, fill and more! We have top quality product ready for your project. Call us to get started" />
+                <meta name="twitter:image" content="/dirt_share.png" />
+                <link rel="canonical" href="https://aplustopsoil.com" />
             </Head>
 
             <main>
