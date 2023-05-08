@@ -160,7 +160,7 @@ export default function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} />
+                        <ReCAPTCHA sitekey={process.env.NEXT_SITE_RECAPTCHA_KEY} />
                         <div className="mt-8 flex justify-end items-center space-x-4">
                             <button
                                 type="submit"
