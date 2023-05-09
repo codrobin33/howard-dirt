@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import truck from '../public/truck.png';
+import truck from '../public/truck.webp';
 
 export default function PicturePanel() {
     return (
