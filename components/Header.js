@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import Seperator from "./Seperator";
+
+import bgImage from '../public/bg_img_dirt.png';
 
 export default function Header() {
 
@@ -13,7 +16,17 @@ export default function Header() {
                     <source src="/small_video_bg_dirt.mp4" type="video/mp4" />
                     Your browser does not support the video tag
                 </video>
-                <img src="/bg_img_dirt.png" className="sm:hidden absolute -z-10 w-full h-full object-center object-cover" />
+
+                <div className="sm:hidden absolute -z-10 w-full h-full">
+                    <Image
+                        src={bgImage}
+                        alt="Background Image"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center"
+                        priority
+                    />
+                </div>
 
                 <div className="isolate px-6 pt-10 lg:px-8 ">
                     <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">

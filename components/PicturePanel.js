@@ -1,3 +1,7 @@
+import Image from 'next/image';
+
+import truck from '../public/truck.png';
+
 export default function PicturePanel() {
     return (
         <div className="overflow-hidden bg-white py-24 sm:py-32" id="promise">
@@ -42,11 +46,17 @@ export default function PicturePanel() {
                             </figure>
                         </div>
                     </div>
-                    <img
-                        src="/truck.png"
-                        alt="Product screenshot"
-                        className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:ml-0"
-                    />
+
+                    <div className="relative w-full h-[15rem] sm:h-5/6 max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:ml-0">
+                        <Image
+                            src={truck}
+                            layout="fill"
+                            objectFit="cover"
+                            objectPosition="center"
+                            alt="Picture of dump truck"
+                            style={{ borderRadius: '0.75rem' }}
+                        />
+                    </div>
                 </div>
             </div>
         </div>
