@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Seperator from "./Seperator";
 
-import bgImage from '../public/bg_img_dirt.png';
+import bgImage from '../public/bg_img_dirt.webp';
 
 export default function Header() {
 
@@ -10,7 +10,7 @@ export default function Header() {
             <div className="relative">
                 <video
                     autoPlay loop muted
-                    poster="/bg_img_dirt.png"
+                    poster="/bg_img_dirt.webp"
                     className="hidden sm:block absolute -z-10 w-auto min-w-full min-h-full max-w-none"
                 >
                     <source src="/small_video_bg_dirt.mp4" type="video/mp4" />
