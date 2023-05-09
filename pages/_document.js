@@ -6,7 +6,8 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+                <link rel="preconnect" href="https://rsms.me/" />
+                <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=G-YG376LSLBR"
                     strategy="afterInteractive"
