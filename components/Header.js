@@ -25,6 +25,7 @@ export default function Header() {
                         objectFit="cover"
                         objectPosition="center"
                         placeholder="blur"
+                        quality={50}
                         priority
                     />
                 </div>
