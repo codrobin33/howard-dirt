@@ -23,7 +23,7 @@ export default function Home() {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="A Plus Topsoil" />
                 <meta property="og:description" content="Dirt, gravel, fill and more! We have top quality product ready for your project. Call us to get started" />
-                <meta property="og:image" content="/dirt_share.png" />
+                <meta property="og:image" content="https://aplustopsoil.com/dirt_share.png" />
 
                 {/* <!-- Twitter Meta Tags --> */}
                 <meta name="twitter:card" content="A Plus Topsoil - Family run topsoil delivery business" />
@@ -31,7 +31,7 @@ export default function Home() {
                 <meta property="twitter:url" content="https://aplustopsoil.com" />
                 <meta name="twitter:title" content="A Plus Topsoil" />
                 <meta name="twitter:description" content="Dirt, gravel, fill and more! We have top quality product ready for your project. Call us to get started" />
-                <meta name="twitter:image" content="/dirt_share.png" />
+                <meta name="twitter:image" content="https://aplustopsoil.com/dirt_share.png" />
             </Head>
 
             <main>
